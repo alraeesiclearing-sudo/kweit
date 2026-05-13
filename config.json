@@ -1,0 +1,12 @@
+{
+  "site_name": "Ziyada Kuwait",
+  "currency": "KD",
+  "payment_methods": [
+    {"name": "K-Net", "status": "active"},
+    {"name": "Credit Card", "status": "disabled"}
+  ],
+  "admin_settings": {
+    "track_visits": true,
+    "save_to_database": true
+  }
+}
