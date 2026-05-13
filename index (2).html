@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>البوابة الرقمية الموحدة لفحص المركبات</title>
+    
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=AW-18027461174"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-18027461174');
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet"/>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Cairo', sans-serif;
+            direction: rtl;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 100%;
+            padding: 20px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 30px 0 20px;
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 30px;
+        }
+        
+        .header-title {
+            font-size: 24px;
+            font-weight: 900;
+            color: #006C35;
+            margin-bottom: 10px;
+        }
+        
+        .header-subtitle {
+            font-size: 14px;
+            color: #666;
+            font-weight: 400;
+        }
+        
+        .hero-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .hero-title {
+            font-size: 28px;
+            font-weight: 900;
+            color: #333;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        
+        .hero-description {
+            font-size: 15px;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .btn {
+            padding: 18px 30px;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            transition: all 0.3s ease;
+            text-align: center;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        .btn-primary {
+            background-color: #006C35;
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 108, 53, 0.3);
+        }
+        
+        .btn-primary:active {
+            background-color: #005a2d;
+            transform: scale(0.98);
+        }
+        
+        .btn-secondary {
+            background-color: white;
+            color: #006C35;
+            border: 2px solid #006C35;
+        }
+        
+        .btn-secondary:active {
+            background-color: #f0f0f0;
+            transform: scale(0.98);
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: 900;
+            color: #333;
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .faq-item {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            border-right: 4px solid #006C35;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .faq-item h3 {
+            font-size: 16px;
+            font-weight: 800;
+            color: #006C35;
+            margin-bottom: 10px;
+        }
+        
+        .faq-item p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        
+        .footer {
+            background-color: #1a1a1a;
+            color: #ccc;
+            padding: 30px 20px;
+            margin-top: 50px;
+            border-top: 4px solid #006C35;
+        }
+        
+        .footer-section {
+            margin-bottom: 25px;
+        }
+        
+        .footer-title {
+            font-size: 18px;
+            font-weight: 900;
+            color: #006C35;
+            margin-bottom: 15px;
+            text-align: right;
+        }
+        
+        .footer-item {
+            font-size: 13px;
+            margin-bottom: 10px;
+            text-align: right;
+            line-height: 1.8;
+        }
+        
+        .footer-item strong {
+            color: white;
+            display: inline-block;
+            min-width: 100px;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .footer-link {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: rgba(0, 108, 53, 0.1);
+            color: #006C35;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-link:active {
+            background-color: #006C35;
+            color: white;
+        }
+        
+        .footer-bottom {
+            font-size: 12px;
+            color: #999;
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            margin-top: 20px;
+        }
+        
+        .disclaimer {
+            background-color: rgba(0, 108, 53, 0.05);
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 13px;
+            color: #555;
+            text-align: center;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 24px;
+            }
+            
+            .hero-description {
+                font-size: 14px;
+            }
+            
+            .btn {
+                font-size: 16px;
+                padding: 16px 25px;
+            }
+            
+            .faq-item {
+                padding: 15px;
+            }
+            
+            .faq-item h3 {
+                font-size: 15px;
+            }
+            
+            .faq-item p {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-title">البوابة الرقمية الموحدة</div>
+            <div class="header-subtitle">خدمة فحص المركبات</div>
+        </div>
+        
+        <div class="hero-section">
+            <h1 class="hero-title">خدمة تسجيل وفحص المركبات</h1>
+            <p class="hero-description">تشرح المنصة خدمة تسجيل وفحص المركبات وإدارة المواعيد والحجز بكل سهولة وسرعة. نحن هنا لتوفير أفضل الخدمات لمركبتك.</p>
+            
+            <div class="button-group">
+                <a href="https://carcheca.online" class="btn btn-primary">حجز موعد فحص</a>
+                <a href="https://carcheca.online" class="btn btn-secondary">تعديل موعد فحص</a>
+            </div>
+        </div>
+        
+        <div class="disclaimer">
+            <strong>مركز الياليس لفحص وتسجيل المركبات</strong> هي بوابة دفع وسيطة مستقلة وليست الموقع الرسمي لشركات الاتصالات.
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">الأسئلة الشائعة</h2>
+            
+            <div class="faq-item">
+                <h3>1. متى يجب علي إجراء الفحص الدوري؟</h3>
+                <p>يجب إجراء الفحص الفني للمركبة سنوياً عند تجديد الملكية للمركبات التي تجاوز عمرها 3 سنوات من تاريخ التسجيل الأول.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>2. ما هي الأوراق المطلوبة عند الحضور؟</h3>
+                <p>يتطلب الحضور تقديم ملكية السيارة الأصلية (أو الرقم الموحد)، ورخصة القيادة، ونسخة من الهوية لصاحب العلاقة.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>3. هل يمكن لشخص آخر قيادة المركبة للفحص؟</h3>
+                <p>نعم، يمكن لأي شخص مفوض قانوناً أو يحمل تفويضاً من صاحب المركبة إحضارها للفحص بشرط حمل الوثائق المطلوبة.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>4. كم تبلغ رسوم إعادة الفحص؟</h3>
+                <p>رسوم إعادة الفحص مخفضة بنسبة 50% عن الرسوم الأساسية، بشرط أن تتم الإعادة في غضون 30 يوماً من تاريخ الفحص الأول.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>5. هل يتم فحص الإضافات والتعديلات؟</h3>
+                <p>نعم، أي تعديلات جوهرية على المحرك أو الهيكل أو لون المركبة يجب أن تكون معتمدة ومسجلة مسبقاً وإلا ستعتبر المركبة راسبة.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>6. ما هي أهم أسباب رسوب المركبات؟</h3>
+                <p>أبرز الأسباب هي تهالك الإطارات، تسرب الزيوت، عدم عمل الأضواء بشكل صحيح، ووجود كسور في الزجاج الأمامي أو نقص في معدات السلامة.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>7. هل أحتاج لحجز موعد مسبق دائماً؟</h3>
+                <p>نعم، يفضل دائماً الحجز عبر المنصة لتجنب الازدحام الشديد وضمان تقديم الخدمة في وقت قياسي لا يتجاوز 20 دقيقة.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>8. هل يمكن الفحص في مراكز مختلفة؟</h3>
+                <p>نعم، الفحص الفني الصادر من المراكز المعتمدة عبر المنصة مقبول في كافة المناطق والجهات المختصة بغض النظر عن مكان إصدار الملكية.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>9. ماذا لو انتهت صلاحية الفحص قبل التجديد؟</h3>
+                <p>صلاحية شهادة الفحص هي 30 يوماً. إذا تجاوزت هذه المدة دون تجديد الملكية، ستحتاج لإعادة الفحص من جديد ودفع الرسوم كاملة.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>10. كيف أحصل على تقرير الفحص الفني؟</h3>
+                <p>بمجرد الانتهاء، يتم إرسال التقرير فوراً عبر رسالة نصية (SMS) إلى رقم هاتفك المسجل، كما يظهر في لوحة تحكم المنصة.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <div class="footer-title">بيانات الشركة والمعلومات الرسمية</div>
+                <div class="footer-item"><strong>اسم الشركة:</strong> مركز الياليس لفحص وتسجيل المركبات ش.ذ.م.م</div>
+                <div class="footer-item"><strong>رقم الرخصة الموحدة:</strong> BF2028</div>
+                <div class="footer-item"><strong>رقم الترخيص:</strong> 889991</div>
+                <div class="footer-item"><strong>سلطة الإصدار:</strong> دائرة الاقتصاد والسياحة</div>
+                <div class="footer-item"><strong>الشكل القانوني:</strong> ذات مسئولية محدودة</div>
+                <div class="footer-item"><strong>تاريخ الإصدار:</strong> 2020-06-08</div>
+                <div class="footer-item"><strong>تاريخ الانتهاء:</strong> 2026-06-07</div>
+                <div class="footer-item"><strong>العنوان:</strong> محل ملك شركة تطوير مجموعة دي للاستثمار - مجموعة دي للاستثمار الثاني</div>
+                <div class="footer-item"><strong>الأنشطة:</strong> الفحص الفني للمركبات وخدمات التسجيل</div>
+            </div>
+            
+            <div class="footer-section">
+                <div class="footer-links">
+                    <a href="terms_and_conditions.html" class="footer-link">الشروط والأحكام الكاملة</a>
+                    <a href="privacy_policy.html" class="footer-link">سياسة الخصوصية والأمان</a>
+                    <a href="disclaimer.html" class="footer-link">إخلاء المسؤولية القانوني</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                © 2026 جميع الحقوق محفوظة لـ مركز الياليس لفحص وتسجيل المركبات ش.ذ.م.م
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
